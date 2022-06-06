@@ -3,3 +3,51 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Generics */
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.upper-content{
+    flex-grow: 1;
+    display: flex;
+}
+
+
+footer{
+    height: 100px;
+    background-color: #282828;
+    flex-shrink: 0;
+}
+
+/* Upper content */
+
+.sidebar{
+    flex-basis: 230px;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+
+main{
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #141922;
+    padding-top: 90px;
+}
+
+
+/* MAIN HEADER */
+
+.main-header{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: calc(100% - 230px);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
