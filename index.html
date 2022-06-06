@@ -5,14 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
     <div class="wrapper">
         <div class="upper-content">
-            <div class="sidebar">
+            
+            <!--SIDEBAR-->
 
+            <div class="sidebar">
+                <div class="sidebar-container d-flex flex-dir-column">
+                    
+                    <!--SIDEBAR LOGO-->
+
+                    <div class="logo mb-50">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+
+                    <!--SIDEBAR NAV-->
+
+                    <nav class="sidebar-nav">
+                        
+                        
+                        <div class="home h-50 lh-50 mb-20">
+                            <img src="img/home.svg" alt="Home" class="v-align-middle h-40">
+                            <span class="v-align-middle fw-bold">Home</span>
+                        </div>
+
+                        <div class="search h-50 lh-50 mb-20">
+                            <img src="img/search.svg" alt="Search" class="v-align-middle h-40">
+                            <span class="v-align-middle fw-bold">Cerca</span>
+                        </div>
+
+                        <div class="library h-50 lh-50 mb-35">
+                            <img src="img/libreria.svg" alt="Search" class="v-align-middle h-40">
+                            <span class="v-align-middle fw-bold">La tua libreria</span>
+                        </div>
+
+
+                    </nav>
+
+                    <!--SIDEBAR PLAYLIST SECTION-->
+
+                    <div class="playlist-section">
+                        <h4 class="white-color">
+                            PLAYLIST
+                        </h4>
+
+                        <div class="crea-playlist h-50 lh-50 mb-20">
+                            <i class="fa-solid fa-square-plus v-align-middle"></i>
+                            <span class="fw-bold v-align-middle">Crea Playlist</span>
+                        </div>
+
+                        <div class="playlist">
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            <div class="mb-20">
+                                <span class="fw-bold">Nome Playlist</span>
+                            </div>
+
+                            
+
+
+                        </div>
+                    </div>
+
+                    <div class="profile-section">
+                        <div class="download">
+                            
+                            <div class="lh-20 mb-20">
+                                <img src="img/download.svg" alt="download" class="h-20 v-align-middle">
+                                <span class="fw-bold v-align-middle">
+                                    Installa app
+                                </span>
+                            </div>
+                            <hr class="mb-20">
+                        </div>
+                        <div class="profile lh-20">
+                            <img src="img/profile.svg" alt="profile" class="h-20 v-align-middle">
+                            <span class="fw-bold v-align-middle">Giuseppe Bergamo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-container-resp">
+                    <nav>
+                        <div class="logo-resp d-flex flex-dir-column align-items-center">
+                            <img src="img/logo-small.svg" alt="logo" class="mb-20">
+                            <img src="img/home.svg" alt="home" class="mb-20 h-40">
+                            <img src="img/search.svg" alt="search" class="mb-20 h-40">
+                            <img src="img/libreria.svg" alt="libreria" class="h-40">
+                        </div>
+
+                    </nav>
+                    
+                    <div class="profile-resp d-flex flex-dir-column align-items-center">
+                        <img src="img/download.svg" alt="download" class="mb-20 h-20">
+                        <img src="img/profile.svg" alt="download" class="h-40 w-40 b-radius bg-grey">
+                    </div>
+                    
+                </div>
             </div>
+
+            <!--MAIN-->
+
             <main>
                 <header class="main-header">
                     <a href=""></a>
@@ -27,7 +149,7 @@
                     </h2>
 
                     <div class="played-elements">
-                        
+
                     </div>
                 </div>
             </main>

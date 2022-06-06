@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Generics */
@@ -24,13 +25,154 @@ footer{
     flex-shrink: 0;
 }
 
+.sidebar-container{
+    height: 100%;
+}
+
+.sidebar-container-resp{
+    display: none;
+}
+
+/* Utils */
+
+/* FLEX UTILS */
+
+.d-flex{
+    display: flex;
+}
+
+.flex-dir-column{
+    flex-direction: column;
+}
+
+.flex-dir-row{
+    flex-direction: row;
+}
+
+.j-content-space-between{
+    justify-content: space-between;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+/* MARGIN UTILS */
+
+
+/* MARGIN BOTTOM */
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.mb-35{
+    margin-bottom: 35px;
+}
+
+.mb-20{
+    margin-bottom: 20px;
+}
+
+/* HEIGHT UTILS */
+
+.h-50{
+    height: 50px;
+}
+
+.lh-50{
+    line-height: 50px;
+}
+
+.h-40{
+    height: 40px;
+}
+
+.h-20{
+    height: 20px;
+}
+
+.lh-20{
+    line-height: 20px;
+}
+
+
+/* WIDTH UTILS */
+
+.w-40{
+    width: 40px;
+}
+
+/* VERTICAL ALIGN MIDDLE*/
+
+.v-align-middle{
+    vertical-align: middle;
+}
+
+/* FONT WEIGHT */
+
+.fw-bold{
+    font-weight: bold;
+}
+
+
+/* COLORS */
+
+.white-color{
+    color: white;
+}
+
+.bg-grey{
+    background-color: grey;
+}
+
+/* CIRCLE BORDER RADIUS */
+
+.b-radius{
+    border-radius: 50%;
+}
+
 /* Upper content */
+
+/* SIDEBAR */
 
 .sidebar{
     flex-basis: 230px;
     flex-shrink: 0;
     background-color: black;
+    padding: 20px;
+    color: #565656;
 }
+
+.fa-square-plus{
+    font-size: 40px;
+}
+
+.playlist-section{
+    flex-grow: 1;
+}
+
+.playlist{
+    overflow-y: auto;
+}
+
+.playlist span{
+    font-size: 14px;
+}
+
+.download span{
+    font-size: 14px;
+}
+
+.profile img{
+    background-color: grey;
+    border-radius: 50%;
+    width: 20px;
+}
+
+
+
+/* MAIN */
 
 
 main{
@@ -50,4 +192,38 @@ main{
     position: fixed;
     top: 0;
     right: 0;
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 480px){
+    .sidebar{
+        flex-basis: 80px;
+    }
+
+    .sidebar-container{
+        display: none;
+    }
+
+    .sidebar-container-resp{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar-container-resp img{
+        display: block;
+    }
+
+    .main-header{
+        width: calc(100% - 80px);
+    }
 }
