@@ -25,6 +25,7 @@ footer{
     height: 100px;
     background-color: #282828;
     flex-shrink: 0;
+    color: #565656;
 }
 
 .sidebar-container{
@@ -121,6 +122,10 @@ address{
     margin: 20px;
 }
 
+.mr-20{
+    margin-right: 20px;
+}
+
 /* PADDING UTILS */
 
 .p-20{
@@ -161,6 +166,14 @@ address{
 
 .w-100{
     width: 100%;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-50{
+    width: 50%;
 }
 
 /* VERTICAL ALIGN MIDDLE*/
@@ -267,8 +280,15 @@ main{
 }
 
 
-/* MAIN SECTIONS */
+/* FOOTER */
 
+#player img{
+    width: 50px;
+}
+
+#nome-brano{
+    text-align: left;
+}
 
 
 
